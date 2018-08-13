@@ -160,7 +160,10 @@ header .main-header .main-nav ul li a:hover {
   background-color: #4886ff;
   text-align: center;
 }
-
+.feature .teacher {
+  width : 100px;
+  height :100px;
+}
 .feature p{
   padding: 0 10px;
   font-size: 13px;
@@ -170,7 +173,11 @@ header .main-header .main-nav ul li a:hover {
   color: white;
   font-size: 12px;
   font-weight: bold;
-  /* margin-right: 5px; */
+}
+.feature .r-arrow {
+  color : yellow;
+  /* margin-left : 4px; */
+  font-size: 11px;
 }
 .feature .blue-inner p:last-child {
   font-size: 12px;
@@ -191,10 +198,7 @@ header .main-header .main-nav ul li a:hover {
   color: white;
   font-size: 50px;
 }
-.feature a:last-child{
-  color:white;
-  margin-right: 5px;
-}
+
 .feature h3{
   color: white;
 }
@@ -226,13 +230,17 @@ header .main-header .main-nav ul li a:hover {
     align-items: stretch;
     justify-content: space-between;
 }
-.about .image{
+.about .wrapper .image{
   width : 50%;
   height: 400px;
   background-image: url('../img/welcome.jpeg');
   background-size: cover;
 }
-
+.feature .r-arrow {
+  color : yellow;
+  /* margin-left : 4px; */
+  font-size: 11px;
+}
 /********************** popular courses ******************************/
 
 .courses {
@@ -278,7 +286,7 @@ padding: 15px 15px 100px 15px;
   font-size: 14px;
 }
 .courses .inner .reviews{
-  border-bottom:2px solid grey;
+  border-bottom:1px solid #b1b1b1;
   padding: 0;
 }
 .courses li{
@@ -288,7 +296,7 @@ padding: 15px 15px 100px 15px;
   color: #ed8a19;
 }
 .courses .user{
-  color: grey;
+  color: #b1b1b1;
 }
 
 
@@ -326,10 +334,12 @@ padding: 15px 15px 100px 15px;
 .events p{
   margin: 0;
   margin: 10px 0 15px 0;
-  color: #575757;
+  color: #808080;
 }
 .events a{
   color: #575757;
+  font-weight: bold;
+  font-size: 12px;
 }
 .events h3{
   margin: 0;
@@ -356,7 +366,7 @@ padding: 15px 15px 100px 15px;
   background-image: url('../img/event1.jpeg');
 }
 .events .inner:nth-child(2) .img{
-  background-image: url('../img/event2.png');
+  background-image: url('../img/events2.jpeg');
 }
 
 /****************** purchase ******************/
@@ -386,8 +396,14 @@ padding: 15px 15px 100px 15px;
   margin-top: 10px;
 }
 .purchase .inner p {
-  margin-bottom: 10px;
-  margin-top: 0;
+  font-size:20px;
+  margin:0 0 5px 0;
+  font-weight: bold;
+}
+.purchase .inner p:last-child {
+  font-size: 15px;
+  margin : 0 0 10px 0;
+  font-weight: normal;
 }
 .purchase .icon {
   width : 80px;
@@ -459,19 +475,21 @@ padding: 0px 50px;
 }
 .publications h3 {
   color : black;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   text-align: left;
 }
 .publications p {
   color : #ffc000;
+  font-size: 14px;
+  font-weight: bold;
 }
 .publications a {
   border : 1px solid black;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
-  color : black;
-  padding : 7px;
+  color : #3b3939;
+  padding : 7px 10px 7px 10px;
 }
 
 
@@ -589,11 +607,11 @@ font-weight: normal;
   padding-top: 40px;
 }
 .careers .btn a {
-  font-size: 19px;
+  font-size: 12px;
   font-weight: bold;
   color : white;
   background-color: black;
-  padding: 10px 20px;
+  padding: 12px 30px;
 }
 
 
@@ -613,6 +631,15 @@ footer h3 {
 footer ol {
   padding: 0;
   margin : 0;
+}
+footer li{
+  list-style-type: none;
+}
+footer .list {
+  margin-left :5px;
+}
+footer .icon-a {
+  color : grey;
 }
 footer .top-footer p,a,li {
   color : grey;
@@ -692,3 +719,154 @@ footer .bottom-footer .icon:last-child {
     display: none;
   }
 /***************** main **********************************/
+
+
+
+/***************** features **********************************/
+.feature .wrapper{
+  flex-flow: column;
+}
+.feature .blue-inner {
+width : 100%;
+display: block;
+padding: 15px 15px;
+margin-top:100px;
+margin-bottom: 15px;
+}
+.feature .green-inner {
+width : 100%;
+display: block;
+padding: 15px 15px;
+margin-bottom: 15px;
+}
+.feature .pink-inner {
+width : 100%;
+display: block;
+padding: 15px 15px;
+margin-bottom: 15px;
+}
+/***************** about **********************************/
+.about .wrapper {
+  flex-flow: column;
+}
+.about .wrapper .welcome,.image {
+  width:100%;
+  display: block;
+  text-align: center;
+}
+.about .wrapper .image {
+  width:100%;
+  height: 200px;
+}
+
+/***************** courses **********************************/
+.courses .wrapper {
+  flex-flow: column;
+}
+.courses .wrapper .inner {
+  width :100%;
+  margin-bottom: 35px;
+}
+.courses .wrapper .inner:last-child{
+  margin-bottom: 0;
+}
+
+
+/***************** events **********************************/
+.events .wrapper .inner {
+  flex-flow : column;
+}
+.events .inner .img {
+  width : 100%;
+  display: block;
+}
+.events .content {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+
+
+/***************** purchases **********************************/
+.purchase .wrapper {
+  flex-flow: column;
+}
+.purchase .statistics .inner {
+  width :100%;
+  display:block;
+  margin-bottom : 10px;
+}
+.purchase .purchase-theme {
+  margin-top : 20px;
+}
+
+
+
+
+
+
+
+
+
+/***************** publications **********************************/
+.publications .wrapper {
+  flex-flow: column;
+}
+.publications .wrapper .inner {
+  width :100%;
+  display: block;
+  margin-bottom: 30px;
+}
+/***************** news **********************************/
+.news .wrapper {
+  flex-flow: column;
+}
+.news .wrapper .inner {
+  width :100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+
+/***************** reviews **********************************/
+.reviews .wrapper .people {
+  width:100%;
+}
+
+
+/***************** careers *************************/
+.careers {
+  height :400px;
+  text-align: center;
+}
+.careers .wrapper {
+  flex-flow: column;
+}
+.careers .wrapper .content {
+  width : 100%;
+  display: block;
+}
+.careers .wrapper .content p {
+  margin-top : 20px;
+}
+.careers .btn {
+margin-top: 50px;
+padding: 0;
+}
+
+/******************* footer ***************************/
+footer.wrapper {
+  flex-flow: column;
+}
+footer .top-footer {
+  flex-flow:column;
+}
+footer .top-footer .topic {
+  width :100%;
+  display: block;
+}
+footer .bottom-footer {
+  flex-flow: column;
+}
+footer bottom-footer .copyrights p{
+  display: blo
