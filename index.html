@@ -12,6 +12,7 @@
 <body>
   <!-- header -->
   <header>
+    <button id="toggleMenuBar">Menu</button>
     <div class="sub-header">
       <div class="wrapper flex">
         <div class="mob-mail">
@@ -26,8 +27,8 @@
     </div>
     <div class="main-header">
       <div class="wrapper flex">
-        <a href="#"><img src="img/eduread.png"></a>
-        <nav class="main-nav">
+        <a href="#" class="logo"><img src="img/eduread.png"></a>
+        <nav class="main-nav" id="mainNav">
           <ul>
             <li class="active"><a href="primary-link">Home</a></li>
             <li><a href="primary-link">Courses</a></li>
@@ -43,11 +44,11 @@
     </div>
   </header>
 
-
   <!-- main  -->
   <main>
     <div class="banner">
       <div class="wrapper">
+        <a href="#"><img src="img/eduread.png"></a>
         <div class="content">
           <h1>Better education for<br>A batter world</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing el sed diam nonumm amet, consectetur adipisicing el sed diam nonumm.</p>
@@ -63,20 +64,20 @@
 
     <div class="feature">
       <div class="wrapper flex">
-        <div class="blue-inner">
-          <a href="#"><img class="teacher" src="img/professor.png"></a>
+        <div class="inner blue-inner">
+          <img class="teacher" src="img/professor.png">
           <h3>Professional Teachers</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing el sed diam nonumm amet,el sed diam nonumm</p>
           <a class="arrow" href="#">READ MORE</a> <a class="r-arrow"><i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="green-inner">
-          <a href="#"><img class="teacher" src="img/working-on-a-pc.png"></a>
+        <div class="inner green-inner">
+          <img class="teacher" src="img/working-on-a-pc.png">
           <h3>Learn Anywhere Online</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing el sed diam nonumm amet,el sed diam nonumm</p>
           <a class="arrow" href="#">READ MORE</a> <a class="r-arrow"><i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="pink-inner">
-          <a href="#"><img class="teacher" src="img/graduation.png"></a>
+        <div class="inner pink-inner">
+          <img class="teacher" src="img/graduation.png">
           <h3>Graduation Certificate</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing el sed diam nonumm amet,el sed diam nonumm</p>
           <a class="arrow" href="#">READ MORE</a> <a class="r-arrow"><i class="fas fa-arrow-right"></i></a>
@@ -88,7 +89,7 @@
       <div class="wrapper flex">
         <div class="welcome">
           <h2>Welcome to EduRead</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br> nisi ut aliquip ex ea commodo consequat. <br> <br> Duis aute irure dolor in reprehenderit in voluptate velit <br> esse cillum dolore eu fugiat nulla pariatur. <br> Excepteur sint occaecat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br> nisi ut aliquip ex ea commodo consequat. <br> <br> Duis aute irure dolor in reprehenderit in voluptate velit <br> esse cillum dolore eu fugiat nulla pariatur. <br> Excepteur sint occaecat.</p>
           <a href="#">READ MORE <i class="fas fa-arrow-right"></i></a>
 
         </div>
@@ -120,8 +121,8 @@
               </div>
               <div class="ratings flex">
                 <ul>
-                  <li class="user"><i class="fas fa-user"> 82</i></li>
-                  <li class="user"><i class="fas fa-heart"> 55</i></li>
+                  <li class="user"><i class="fas fa-user" style="margin-right : 5px"></i><span>82</span></li>
+                  <li class="user"><i class="fas fa-heart" style="margin-right : 5px"></i><span>82</span></li>
                 </ul>
                 <p>$90</p>
               </div>
@@ -141,15 +142,14 @@
                     <li class="star-icon"><i class="fas fa-star"></i></li>
                     <li class="star-icon"><i class="fas fa-star"></i></li>
                     <li class="star-icon"><i class="fas fa-star"></i></li>
-                    <li class="star-icon"><i class="fas fa-star"></i></li>
                   </ul>
                 </div>
                 <p>25 Reviews</p>
               </div>
               <div class="ratings flex">
                 <ul>
-                  <li class="user"><i class="fas fa-user"> 82</i></li>
-                  <li class="user"><i class="fas fa-heart"> 55</i></li>
+                  <li class="user"><i class="fas fa-user" style="margin-right : 5px"></i><span>82</span></li>
+                  <li class="user"><i class="fas fa-heart" style="margin-right : 5px"></i><span>82</span></li>
                 </ul>
                 <p>$90</p>
               </div>
@@ -175,8 +175,8 @@
               </div>
               <div class="ratings flex">
                 <ul>
-                  <li class="user"><i class="fas fa-user"> 82</i></li>
-                  <li class="user"><i class="fas fa-heart"> 55</i></li>
+                  <li class="user"><i class="fas fa-user" style="margin-right : 5px"></i><span>82</span></li>
+                  <li class="user"><i class="fas fa-heart" style="margin-right : 5px"></i><span>82</span></li>
                 </ul>
                 <p>$90</p>
               </div>
@@ -233,22 +233,22 @@
       <div class="wrapper flex">
         <div class="statistics cf">
           <div class="inner">
-            <a href="#"><img class="icon" src="img/student.png" alt=""></a>
+            <img class="icon" src="img/student.png" alt="">
             <p>638</p>
             <p>ACTIVE STUDENTS</p>
           </div>
           <div class="inner">
-            <a href="#"><img class="icon" src="img/ebook.png" alt=""></a>
+            <img class="icon" src="img/ebook.png" alt="">
             <p>44</p>
             <p>ONLINE COURSES</p>
           </div>
           <div class="inner">
-            <a href="#"><img class="icon" src="img/university.png" alt=""></a>
+            <img class="icon" src="img/university.png" alt="">
             <p>5</p>
             <p>HISTORY OF YEARS</p>
           </div>
           <div class="inner">
-            <a href="#"><img class="icon" src="img/trophy.png" alt=""></a>
+            <img class="icon" src="img/trophy.png" alt="">
             <p>47</p>
             <p>ACTIVE STUDENTS</p>
           </div>
@@ -382,13 +382,14 @@
     <div class="wrapper">
       <div class="top-footer cf">
         <div class="topic">
-          <!-- <span class="logo"> -->
-            <a class="logo" href="#"><img src="img/eduread.png"></a>
+            <span class="logo" href="#"><img src="img/eduread.png"></span>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-          <p><a href="#"><i class="fas fa-phone"></i> +012 345 678</a></p>
-          <p><a href="#"><i class="fas fa-envelope"></i> eduread@education.com</a></p>
-          <p><a href="#"><i class="fas fa-map-marker-alt"></i> Central park,NY</a></p>
+          <p>Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit, sed do eiusmod tempor.</p>
+          <ol>
+            <li><a href="#"><i class="fas fa-phone"></i> +012 345 678</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> eduread@education.com</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Central park,NY</a></li>
+          </ol>
         </div>
         <div class="topic">
           <h3>Courses</h3>
@@ -441,7 +442,7 @@
         </div>
       </div>
     </div>
-
   </footer>
+<script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
