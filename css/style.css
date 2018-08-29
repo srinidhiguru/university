@@ -50,6 +50,9 @@ header {
   position: relative;
   z-index: 99;
 }
+header .mob-header {
+  display: none;
+}
 header #toggleMenuBar {
   display: none;
 }
@@ -78,7 +81,7 @@ header .sub-header i {
 header .main-header {
   padding: 15px 0;
 }
-header .main-header .logoMob {
+header .logoMob {
   display: none;
 }
 header .main-header.active {
@@ -151,22 +154,7 @@ header .main-header .main-nav ul li a:hover {
   background-color: orange;
   border: 2px solid transparent;
 }
-.banner .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color:white;
-  font-size: 50px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.banner .arrow.left {
-  left: 10px;
-}
-.banner .arrow.right {
-  right: 10px;
-}
+
 
 /********************** feature ******************************/
 .feature {
@@ -264,7 +252,7 @@ header .main-header .main-nav ul li a:hover {
 }
 .courses .wrapper .inner {
   width:31%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .courses .inner .img{
   /* background-image: url('../img/img1.jpg'); */
@@ -481,13 +469,13 @@ header .main-header .main-nav ul li a:hover {
   font-weight: bolder;
   color : #3b3939;
   padding : 5px 15px;
-  border: 1px solid grey;
+  border: 1px solid #80808059;
 }
 .publications .content {
   margin: 10px;
 }
 .publications .inner {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .publications .inner .img{
   background-size: cover;
@@ -533,7 +521,7 @@ header .main-header .main-nav ul li a:hover {
 }
 .news .inner {
   width : 31%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .news .inner .img {
   height : 250px;
@@ -690,8 +678,8 @@ footer .top-footer .topic input {
   margin-bottom: 5px;
 }
 footer .top-footer .topic:last-child a {
-  padding: 5px;
-  margin-top: 5px;
+  padding: 10px;
+  margin: 0;
   background-color: yellow;
   display: inline-block;
   color: #3e3e3e;
@@ -732,15 +720,14 @@ footer .bottom-footer .icon:last-child {
   /****************** header ******************/
 
   header {
-    padding-top: 40px;
-    background: #292929;
+    background: transparent;
     position: relative;
   }
   header .logo {
     display: none;
   }
   header .main-nav {
-    position: absolute;
+    position: fixed;
     z-index: 999;
     top: 40px;
     height: 0;
@@ -748,7 +735,10 @@ footer .bottom-footer .icon:last-child {
     width: 160px;
     right: 0;
     overflow: hidden;
-
+  }
+  header .main-header.active {
+    position: relative;
+    background: transparent;
   }
   header .main-header .main-nav ul li {
     margin: 0;
@@ -765,31 +755,36 @@ footer .bottom-footer .icon:last-child {
     padding: 10px 20px 10px 10px;
     display: block;
   }
-
   header #toggleMenuBar {
-    position: absolute;
-    right: 20px;
-    top: 10px;
     display: inline-block;
     color: white;
+    font-size: 20px;
   }
-  header .main-header .logoMob {
-    display: inline-block;
-    position: absolute;
-    top: 5px;
-    left: 5px;
+  header .mob-header {
+    display: block;
+    background: black;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ffffff66;
+  }
+  header .mob-header .wrapper {
+    height: 50px;
+  }
+  header .mob-header img {
+    height: 22px;
+    display: block;
   }
   header .mobile-toggle {
     display: inline-block;
     padding-top: 20px;
   }
   header .sub-header {
-    border-top: 1px solid white;
+    padding-top: 59px;
   }
 header .headerflow {
   display: none;
 }
-
   /***************** banner **********************************/
   .banner {
     min-height: 500px;
@@ -934,6 +929,7 @@ header .headerflow {
   .careers .wrapper .content {
     width : 100%;
     display: block;
+    padding-top: 75px;
   }
   .careers .wrapper .content p {
     margin-top : 20px;
