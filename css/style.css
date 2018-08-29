@@ -78,6 +78,9 @@ header .sub-header i {
 header .main-header {
   padding: 15px 0;
 }
+header .main-header .logoMob {
+  display: none;
+}
 header .main-header.active {
   position: fixed;
   width: 100%;
@@ -769,6 +772,12 @@ footer .bottom-footer .icon:last-child {
     top: 10px;
     display: inline-block;
     color: white;
+  }
+  header .main-header .logoMob {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
   }
   header .mobile-toggle {
     display: inline-block;
