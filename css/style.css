@@ -50,7 +50,7 @@ header {
   position: relative;
   z-index: 99;
 }
-header button {
+header #toggleMenuBar {
   display: none;
 }
 header .sub-header a {
@@ -615,6 +615,9 @@ header .main-header .main-nav ul li a:hover {
   color : #1c1c1c;
   margin: 0;
 }
+/* .careers .content, .btn{
+  padding-top: 40px;
+} */
 .careers .btn a {
   font-size: 12px;
   font-weight: bold;
@@ -724,18 +727,13 @@ footer .bottom-footer .icon:last-child {
   }
 
   /****************** header ******************/
-  header button{
-    display: inline-block;
-  }
+
   header {
     padding-top: 40px;
     background: #292929;
     position: relative;
   }
   header .logo {
-    display: none;
-  }
-  header .main-header {
     display: none;
   }
   header .main-nav {
@@ -765,19 +763,23 @@ footer .bottom-footer .icon:last-child {
     display: block;
   }
 
-  header button {
+  header #toggleMenuBar {
     position: absolute;
     right: 20px;
     top: 10px;
+    display: inline-block;
+    color: white;
   }
-  header .mobile-toogle {
+  header .mobile-toggle {
     display: inline-block;
     padding-top: 20px;
   }
   header .sub-header {
     border-top: 1px solid white;
   }
-
+header .headerflow {
+  display: none;
+}
 
   /***************** banner **********************************/
   .banner {
@@ -794,7 +796,7 @@ footer .bottom-footer .icon:last-child {
     padding-bottom: 30px;
     display:block;
     position: absolute;
-    top : -105px;
+    top : 10px;
   }
   .banner .wrapper .content p {
     display: none;
