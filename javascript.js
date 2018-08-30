@@ -25,8 +25,8 @@ window.addEventListener('scroll', function() {
 /**************************************/
 var images = [
   'banner.jpg',
-  'img2.jpg',
-  'career-bg.png'
+  'slider2.jpg',
+  'slider3.jpg'
 ]
 var banner = document.getElementsByClassName('banner')[0];
 var img = 1;
