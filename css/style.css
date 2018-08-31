@@ -166,15 +166,6 @@ header .main-header .main-nav ul li a:hover {
   font-size: 13px;
   color: white;
 }
-.feature .arrow {
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
-}
-.feature .wrapper .r-arrow {
-  color : white;
-  font-size: 11px;
-}
 .feature .blue-inner p:last-child {
   font-size: 12px;
 }
@@ -199,7 +190,18 @@ header .main-header .main-nav ul li a:hover {
 .feature h3{
   color: white;
 }
-
+.feature .arrow {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+.feature .wrapper .r-arrow {
+  color : white;
+  font-size: 11px;
+}
+.feature .wrapper .arrow:hover {
+  margin-right: 5px;
+}
 /********************** about ******************************/
 .about {
   margin-top : 80px;
@@ -239,6 +241,9 @@ header .main-header .main-nav ul li a:hover {
   color : yellow;
   /* margin-left : 4px; */
   font-size: 11px;
+}
+.about .welcome .arrow:hover {
+  margin-right: 5px;
 }
 
 /********************** popular courses ******************************/
@@ -375,7 +380,12 @@ header .main-header .main-nav ul li a:hover {
 .events .inner:nth-child(2) .img{
   background-image: url('../img/events2.jpeg');
 }
-
+.events .wrapper .arrow:hover {
+  margin-right: 5px;
+}
+.events .arrow:hover {
+  margin-right: 5px;
+}
 /****************** purchase ******************/
 .purchase {
   background-image: url('../img/purchase.png');
@@ -783,6 +793,9 @@ footer .bottom-footer .icon:last-child {
     padding-top: 59px;
   }
 header .headerflow {
+  display: none;
+}
+header .main-header .main-nav .search {
   display: none;
 }
   /***************** banner **********************************/
