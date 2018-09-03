@@ -44,52 +44,24 @@ ul {
 a {
   text-decoration: none;
 }
-.grow:hover
-{
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1) ease;
+.brd-btm {
+  position: relative;
+  padding-bottom: 10px;
 }
-
-.swing:hover
-{
-        -webkit-animation: swing 1s ease;
-        animation: swing 1s ease;
-        -webkit-animation-iteration-count: 1;
-        animation-iteration-count: 1;
+.brd-btm:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 150px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
-@-webkit-keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-       transform: translateX(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
+.brd-btm.white:after {
+  background: white;
+}
+.brd-btm.grey:after {
+  background: grey;
 }
 
 /****************** header ******************/
@@ -201,7 +173,6 @@ header .main-header .main-nav ul li a:hover {
   background-color: orange;
   border: 2px solid transparent;
 }
-
 
 /********************** feature ******************************/
 .feature {
@@ -433,6 +404,7 @@ header .main-header .main-nav ul li a:hover {
 .events .arrow:hover {
   margin-right: 5px;
 }
+
 /****************** purchase ******************/
 .purchase {
   background-image: url('../img/purchase.png');
@@ -664,7 +636,7 @@ header .main-header .main-nav ul li a:hover {
   margin: 0;
 }
 /* .careers .content, .btn{
-  padding-top: 40px;
+padding-top: 40px;
 } */
 .careers .btn a {
   font-size: 12px;
@@ -726,7 +698,6 @@ footer .top-footer .topic  {
   width : 20%;
   float : left;
   padding-bottom: 30px;
-
 }
 footer .top-footer .topic input {
   background-color: #121212;
@@ -775,7 +746,6 @@ footer .bottom-footer .icon:last-child {
   }
 
   /****************** header ******************/
-
   header {
     background: transparent;
     position: relative;
@@ -802,10 +772,15 @@ footer .bottom-footer .icon:last-child {
     display: block;
     text-align: right;
   }
+  header .main-header .main-nav ul li:hover {
+    background-color: #333333;
+  }
+  header .main-header .main-nav ul li:last-child {
+    padding-bottom: 5px;
+  }
   #mainNav.open {
     display: block;
     height: auto;
-
   }
   header .main-nav a {
     padding-bottom: 4px;
@@ -839,12 +814,13 @@ footer .bottom-footer .icon:last-child {
   header .sub-header {
     padding-top: 59px;
   }
-header .headerflow {
-  display: none;
-}
-header .main-header .main-nav .search {
-  display: none;
-}
+  header .headerflow {
+    display: none;
+  }
+  header .main-header .main-nav .search {
+    display: none;
+  }
+
   /***************** banner **********************************/
   .banner {
     min-height: 500px;
@@ -906,7 +882,7 @@ header .main-header .main-nav .search {
   .about .wrapper .image {
     width:100%;
     height: 200px;
-      background-position: initial;
+    background-position: initial;
   }
 
   /***************** courses **********************************/

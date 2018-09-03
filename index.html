@@ -35,13 +35,13 @@
         <a href="#" class="logo"><img src="img/eduread.png"></a>
         <nav class="main-nav" id="mainNav">
           <ul>
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#home">Home</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#event">Event</a></li>
             <li><a href="#pages">Pages</a></li>
-            <li><a href="#teachers">Teachers</a></li>
-            <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#contactus">Contact</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#" class="search"><i class="fas fa-search"></i></a></li>
           </ul>
         </nav>
@@ -51,7 +51,7 @@
 
   <!-- main  -->
   <main>
-    <div class="banner">
+    <div class="banner" id="home">
       <div class="wrapper">
         <a href="#"><img src="img/eduread.png"></a>
         <div class="content">
@@ -94,18 +94,16 @@
           <h2>Welcome to EduRead</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br> nisi ut aliquip ex ea commodo consequat. <br> <br> Duis aute irure dolor in reprehenderit in voluptate velit <br> esse cillum dolore eu fugiat nulla pariatur. <br> Excepteur sint occaecat.</p>
           <a class="arrow" href="#">READ MORE</a> <a class="r-arrow"><i class="fas fa-arrow-right"></i></a>
-
         </div>
         <div class="image">
-
         </div>
       </div>
     </div>
 
     <div class="courses" id="courses">
-      <h2>Popular Courses</h2>
+      <h2 class="brd-btm grey">Popular Courses</h2>
       <div class="wrapper flex">
-        <div class="inner grow">
+        <div class="inner">
           <div class="img"></div>
           <div class="topic">
             <h3>WordPress Theme Development</h3>
@@ -132,7 +130,7 @@
             </div>
           </div>
         </div>
-        <div class="inner grow">
+        <div class="inner">
           <div class="img"></div>
           <div class="topic">
             <h3>JQuery mobile for beginners</h3>
@@ -159,7 +157,7 @@
             </div>
           </div>
         </div>
-        <div class="inner grow">
+        <div class="inner">
           <div class="img"></div>
           <div class="topic">
             <h3>Photography for beginners</h3>
@@ -200,10 +198,10 @@
       </div>
     </div>
 
-    <div class="events" id="events">
-      <h2>Upcoming Events</h2>
+    <div class="events" id="event">
+      <h2 class="brd-btm grey">Upcoming Events</h2>
       <div class="wrapper">
-        <div class="inner flex swing">
+        <div class="inner flex">
           <div class="img"></div>
           <div class="content">
             <h3>Basic UI & UX Design for new Development</h3>
@@ -216,7 +214,7 @@
             <a class="arrow" href="#">READ MORE</a> <a class="r-arrow"><i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="inner flex swing">
+        <div class="inner flex">
           <div class="img"></div>
           <div class="content">
             <h3>Digital Art & 3D Model - a future for flim company</h3>
@@ -232,7 +230,7 @@
       </div>
     </div>
 
-    <div class="purchase">
+    <div class="purchase" id="pages">
       <div class="wrapper flex">
         <div class="statistics cf">
           <div class="inner">
@@ -264,8 +262,8 @@
       </div>
     </div>
 
-    <div class="publications">
-      <h2>Our Publications</h2>
+    <div class="publications" id="publications">
+      <h2 class="brd-btm grey">Our Publications</h2>
       <div class="wrapper flex">
         <div class="inner">
           <div class="img"></div>
@@ -310,8 +308,8 @@
       </div>
     </div>
 
-    <div class="news">
-      <h2>Latest News</h2>
+    <div class="news" id="news">
+      <h2 class="brd-btm grey">Latest News</h2>
       <div class="wrapper flex">
         <div class="inner">
           <div class="img"></div>
@@ -350,7 +348,7 @@
     </div>
 
     <div class="reviews">
-      <h2>What Student Parent Say</h2>
+      <h2 class="brd-btm grey">What Student Parent Say</h2>
       <div class="wrapper">
         <div class="people">
           <img class="user" src="img/user.jpg" alt="">
@@ -381,12 +379,11 @@
   </main>
 
   <!-- footer -->
-  <footer>
+  <footer id="contact">
     <div class="wrapper">
       <div class="top-footer cf">
         <div class="topic">
             <span class="logo" href="#"><img src="img/eduread.png"></span>
-
           <p>Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit, sed do eiusmod tempor.</p>
           <ol>
             <li><a href="#"><i class="fas fa-phone"></i> +012 345 678</a></li>
@@ -436,7 +433,6 @@
         </div>
         <div class="social-links cf">
           <p>Follow us:</p>
-
             <a class="icon" href="#"><i class="fab fa-facebook-f"></i></a>
             <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
             <a class="icon" href="#"><i class="fab fa-pinterest-p"></i></a>
@@ -446,6 +442,7 @@
       </div>
     </div>
   </footer>
+<script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
