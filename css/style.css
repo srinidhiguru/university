@@ -70,6 +70,9 @@ a {
     height: 21.97px;
     bottom: 100%;
 }
+.arrow {
+  transition: all 0.3s ease;
+}
 /****************** header ******************/
 header {
   position: relative;
@@ -219,24 +222,24 @@ header .main-header .main-nav ul li a:hover {
   font-size: 12px;
   font-weight: bold;
 }
-.feature .wrapper .r-arrow {
-  color : white;
-  font-size: 11px;
+.feature .arrow:hover {
+  transition: all 0.3s ease;
 }
-.feature .wrapper .arrow:hover {
-  margin-right: 5px;
+.feature .wrapper .r-arrow {
+  color: white;
+  font-size: 11px;
 }
 /********************** about ******************************/
 .about {
-  margin-top : 80px;
+  margin-top: 80px;
 }
 .about h2 {
-  margin:0;
+  margin: 0;
   font-size: 50px;
   color: #292929;
 }
 .about .wrapper .welcome {
-  width : 50%;
+  width: 50%;
   margin-bottom: 100px;
 }
 .about .welcome p{
@@ -254,7 +257,7 @@ header .main-header .main-nav ul li a:hover {
   justify-content: space-between;
 }
 .about .wrapper .image{
-  width : 50%;
+  width: 50%;
   height: 400px;
   background-image: url('../img/welcome.jpeg');
   background-size: 100%;
@@ -262,12 +265,13 @@ header .main-header .main-nav ul li a:hover {
   background-position: right bottom;
 }
 .feature .r-arrow {
-  color : yellow;
+  color: yellow;
   /* margin-left : 4px; */
   font-size: 11px;
 }
 .about .welcome .arrow:hover {
   margin-right: 5px;
+
 }
 
 /********************** popular courses ******************************/
@@ -281,21 +285,21 @@ header .main-header .main-nav ul li a:hover {
   font-size: 50px;
 }
 .courses .wrapper .inner {
-  width:31%;
+  width: 31%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.courses .inner .img{
+.courses .inner .img {
   /* background-image: url('../img/img1.jpg'); */
   background-size: cover;
-  height : 200px;
+  height: 200px;
 }
-.courses .inner:nth-child(1) .img{
+.courses .inner:nth-child(1) .img {
   background-image: url('../img/img1.jpg');
 }
-.courses .inner:nth-child(2) .img{
+.courses .inner:nth-child(2) .img {
   background-image: url('../img/img2.jpg');
 }
-.courses .inner:nth-child(3) .img{
+.courses .inner:nth-child(3) .img {
   background-image: url('../img/img3.jpg');
 }
 .courses .topic {
@@ -303,10 +307,10 @@ header .main-header .main-nav ul li a:hover {
 }
 .courses .wrapper .inner h3{
   padding: 0;
-  color:black;
+  color: black;
   font-weight: bold;
   font-size: 15px;
-  margin : 0;
+  margin: 0;
 }
 .courses .wrapper .inner {
   background-color: white;
@@ -339,9 +343,9 @@ header .main-header .main-nav ul li a:hover {
   background-image: url('../img/video-bg.jpeg');
   background-size: cover;
   background-position: center;
-  height:550px;
+  height: 550px;
   text-align: center;
-  color:white;
+  color: white;
   position: relative;
   font-size: 25px;
 }
@@ -349,10 +353,10 @@ header .main-header .main-nav ul li a:hover {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  left:50%;
+  left: 50%;
 }
 .video .content .img {
-  width : 150px;
+  width: 150px;
 }
 
 /*********************** events *******************/
@@ -361,7 +365,7 @@ header .main-header .main-nav ul li a:hover {
   position: relative;
 }
 .events h2{
-  color:black;
+  color: black;
   font-size: 50px;
   text-align: center;
 }
@@ -389,27 +393,24 @@ header .main-header .main-nav ul li a:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .events .inner:last-child {
-  margin-top :10px;
+  margin-top: 10px;
 }
 .events .content {
   padding: 24px;
 }
 .events .inner .img {
-  width :120%;
-  height : 230px;
+  width: 120%;
+  height: 230px;
   background-size: cover;
   display: inline-block;
 }
-.events .inner:nth-child(1) .img{
+.events .inner:nth-child(1) .img {
   background-image: url('../img/event1.jpeg');
 }
-.events .inner:nth-child(2) .img{
+.events .inner:nth-child(2) .img {
   background-image: url('../img/events2.jpeg');
 }
 .events .wrapper .arrow:hover {
-  margin-right: 5px;
-}
-.events .arrow:hover {
   margin-right: 5px;
 }
 
@@ -423,15 +424,15 @@ header .main-header .main-nav ul li a:hover {
 .purchase .wrapper {
   padding: 60px 0px;
 }
-.purchase .statistics{
+.purchase .statistics {
   /* width:50%; */
 }
 .purchase .inner {
   width: 50%;
-  float :left;
+  float: left;
   display: inline-block;
-  color  : white;
-  font-size : 19px;
+  color: white;
+  font-size: 19px;
   font-weight: bold;
 }
 .purchase .inner:nth-child(3){
@@ -441,18 +442,18 @@ header .main-header .main-nav ul li a:hover {
   margin-top: 10px;
 }
 .purchase .inner p {
-  font-size:20px;
-  margin:0 0 5px 0;
+  font-size: 20px;
+  margin: 0 0 5px 0;
   font-weight: bold;
 }
 .purchase .inner p:last-child {
   font-size: 15px;
-  margin : 0 0 10px 0;
+  margin: 0 0 10px 0;
   font-weight: normal;
 }
 .purchase .icon {
-  width : 80px;
-  height : 80px;
+  width: 80px;
+  height: 80px;
 }
 .purchase h2 {
   font-size: 40px;
@@ -465,7 +466,7 @@ header .main-header .main-nav ul li a:hover {
   /* width: 50%; */
 }
 .purchase .purchase-theme p {
-  color : #3e3e3e;
+  color: #3e3e3e;
   font-size: 18px;
   margin-bottom: 30px;
   padding: 0px 50px;
@@ -493,22 +494,24 @@ header .main-header .main-nav ul li a:hover {
   font-weight: bold;
 }
 .publications h3 {
-  color : black;
+  color: black;
   font-size: 16px;
   font-weight: bold;
   text-align: left;
 }
 .publications p {
-  color : #ffc000;
+  color: #ffc000;
   font-size: 14px;
   font-weight: bold;
 }
 .publications a {
-  font-size: 12px;
-  font-weight: bolder;
-  color : #3b3939;
-  padding : 5px 15px;
+  font-size: 11px;
+  color: #7b7878;
+  padding: 5px 15px;
   border: 1px solid #80808059;
+}
+.publications a:hover {
+  color: #383737;
 }
 .publications .content {
   margin: 10px;
@@ -519,18 +522,18 @@ header .main-header .main-nav ul li a:hover {
 .publications .inner .img{
   background-size: cover;
   /* width : 100%; */
-  height : 350px;
+  height: 350px;
 }
-.publications .inner:nth-child(1) .img{
+.publications .inner:nth-child(1) .img {
   background-image: url('../img/product1.jpg');
 }
-.publications .inner:nth-child(2) .img{
+.publications .inner:nth-child(2) .img {
   background-image: url('../img/product2.jpg');
 }
-.publications .inner:nth-child(3) .img{
+.publications .inner:nth-child(3) .img {
   background-image: url('../img/product3.jpg');
 }
-.publications .inner:nth-child(4) .img{
+.publications .inner:nth-child(4) .img {
   background-image: url('../img/product4.jpg');
 }
 
@@ -541,7 +544,7 @@ header .main-header .main-nav ul li a:hover {
   position: relative;
 }
 .news h2 {
-  color : #3e3e3e;
+  color: #3e3e3e;
   font-size: 50px;
   font-weight: bold;
   text-align: center;
@@ -551,20 +554,20 @@ header .main-header .main-nav ul li a:hover {
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: bold;
-  color : black;
+  color: black;
 }
 .news p:last-child {
-  color : #3e3e3e;
+  color: #3e3e3e;
   font-size: 12px;
-  margin : 15px 0 10px 0;
+  margin: 15px 0 10px 0;
   font-weight: normal;
 }
 .news .inner {
-  width : 31%;
+  width: 31%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .news .inner .img {
-  height : 250px;
+  height: 250px;
   background-size: cover;
 }
 .news .inner:nth-child(1) .img {
@@ -587,43 +590,56 @@ header .main-header .main-nav ul li a:hover {
 /*********************** reviews *********************/
 .reviews {
   padding: 25px 0 40px 0;
+  position: relative;
 }
 .reviews h2 {
   text-align: center;
   font-size: 50px;
   font-weight: bold;
-  color : black;
+  color: black;
 }
 .reviews .people {
   text-align: center;
-  width : 50%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
-  color : #656565;
+  color: #656565;
 }
 .reviews .people p {
-  margin : 30px 0 10px 0;
+  margin: 30px 0 10px 0;
   font-size: 14px;
 }
 .reviews .user {
-  width : 150px;
+  width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 .reviews .people h3 {
-  color : #3e3e3e;
+  color: #3e3e3e;
   font-weight: bold;
   margin: 10px 0 0 0;
 }
 .reviews .people h4 {
   font-size: 14px;
-  color : #656565;
+  color: #656565;
   font-weight: normal;
   margin: 0;
 }
 .reviews .ratings {
-  color : orange;
+  color: orange;
   font-size: 10px;
+}
+.reviews .left-quote {
+  position: absolute;
+  top: 335px;
+  left: 370px;
+  width: 50px;
+}
+.reviews .right-quote {
+  position: absolute;
+  bottom: 97px;
+  right: 378px;
+  width: 50px;
 }
 
 /************** careers ******************/
@@ -643,7 +659,7 @@ header .main-header .main-nav ul li a:hover {
   margin: 0;
 }
 .careers p {
-  color : #1c1c1c;
+  color: #1c1c1c;
   margin: 0;
 }
 /* .careers .content, .btn{
@@ -669,6 +685,9 @@ footer h3 {
   margin: 0 0 20px 0;
   /* padding-bottom: 10px; */
 }
+footer a:hover {
+  color: yellow;
+}
 footer ol {
   padding: 0;
   margin : 0;
@@ -680,10 +699,10 @@ footer .list {
   margin-left :5px;
 }
 footer .icon-a {
-  color : grey;
+  color: grey;
 }
 footer .top-footer p, footer .top-footer a, footer .top-footer li {
-  color : grey;
+  color: grey;
   font-size: 12px;
   margin: 0;
   list-style-position: inside;
@@ -696,8 +715,11 @@ footer .top-footer li i {
   font-size: 10px;
   margin-right: 5px;
 }
+footer .top-footer a:hover {
+  color: yellow;
+}
 footer .top-footer .logo img {
-  width :100px;
+  width: 100px;
   padding-bottom: 21px;
 }
 footer .top-footer .topic:first-child {
@@ -707,14 +729,14 @@ footer .top-footer .topic p:first-child {
   padding-bottom: 10px;
 }
 footer .top-footer .topic  {
-  width : 20%;
-  float : left;
+  width: 20%;
+  float: left;
   padding-bottom: 30px;
 }
 footer .top-footer .topic input {
   background-color: #121212;
   border: none;
-  padding:10px;
+  padding: 10px;
   margin-bottom: 5px;
 }
 footer .top-footer .topic:last-child a {
@@ -965,7 +987,16 @@ footer .bottom-footer .icon:last-child {
   .reviews .wrapper .people {
     width:100%;
   }
-
+.reviews .left-quote {
+  left:10px;
+  top: 385px;
+  width: 40px;
+}
+.reviews .right-quote {
+  right:10px;
+  bottom: 95px;
+  width: 40px;
+}
   /***************** careers *************************/
   .careers {
     height :400px;
