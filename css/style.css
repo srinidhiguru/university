@@ -221,9 +221,11 @@ header .main-header .main-nav ul li a:hover {
   color: white;
   font-size: 12px;
   font-weight: bold;
+  transition: all 0.3s ease;
+
 }
 .feature .arrow:hover {
-  transition: all 0.3s ease;
+  margin-right: 5px;
 }
 .feature .wrapper .r-arrow {
   color: white;
@@ -271,7 +273,6 @@ header .main-header .main-nav ul li a:hover {
 }
 .about .welcome .arrow:hover {
   margin-right: 5px;
-
 }
 
 /********************** popular courses ******************************/
