@@ -15,8 +15,7 @@ document.getElementById('toggleMenuBar').addEventListener('click',function(){
 var mainHeader = document.getElementById('mainHeader');
 
 window.addEventListener('scroll', function() {
-  console.log('scrolling');
-  if(window.scrollY > 39) {
+  if(window.scrollY > 0) {
     mainHeader.classList.add('active');
   } else {
     mainHeader.classList.remove('active');
