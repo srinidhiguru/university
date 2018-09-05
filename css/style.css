@@ -92,7 +92,7 @@ header .sub-header  a:last-child {
   margin-right: 0;
 }
 header .sub-header a:hover {
-  color: yellow;
+  color: #fec722;
 }
 header .sub-header {
   background-color: #292929;
@@ -133,14 +133,14 @@ header .main-header .main-nav ul li:last-child {
   margin-right: 0;
 }
 header .main-header .main-nav ul li.active a {
-  color: yellow;
+  color: #fec722;
 }
 header .main-header .main-nav ul li a {
   color: white;
   padding-bottom: 4px;
 }
 header .main-header .main-nav ul li a:hover {
-  color: yellow;
+  color: #fec722;
 }
 
 /*********************** banner **********************/
@@ -267,7 +267,7 @@ header .main-header .main-nav ul li a:hover {
   background-position: right bottom;
 }
 .feature .r-arrow {
-  color: yellow;
+  color: #fec722;
   /* margin-left : 4px; */
   font-size: 11px;
 }
@@ -473,7 +473,7 @@ header .main-header .main-nav ul li a:hover {
   padding: 0px 50px;
 }
 .purchase .purchase-theme a {
-  background-color: yellow;
+  background-color: #fec722;
   font-size: 22px;
   font-weight: bold;
   color: #3e3e3e;
@@ -687,7 +687,7 @@ footer h3 {
   /* padding-bottom: 10px; */
 }
 footer a:hover {
-  color: yellow;
+  color: #fec722;
 }
 footer ol {
   padding: 0;
@@ -717,7 +717,7 @@ footer .top-footer li i {
   margin-right: 5px;
 }
 footer .top-footer a:hover {
-  color: yellow;
+  color: #fec722;
 }
 footer .top-footer .logo img {
   width: 100px;
@@ -743,7 +743,7 @@ footer .top-footer .topic input {
 footer .top-footer .topic:last-child a {
   padding: 10px;
   margin: 0;
-  background-color: yellow;
+  background-color: #fec722;
   display: inline-block;
   color: #3e3e3e;
   font-weight: bold;
